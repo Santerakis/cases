@@ -1,0 +1,84 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  .nav-button {
+    background: linear-gradient(135deg, #d3d3d3 0%, #ffffff 100%);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap; // Prevent text wrapping
+    // min-width: 100px; // Ensure a minimum width
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+    &:hover {
+      background: linear-gradient(135deg, #c0c0c0 0%, #e6e6e6 100%);
+    }
+
+    &:disabled {
+      color: #ccc;
+      cursor: not-allowed;
+      background: linear-gradient(135deg, #f1f1f1 0%, #e0e0e0 100%);
+    }
+  }
+
+  .page-number {
+    background: linear-gradient(135deg, #e6e6e6 0%, #ffffff 100%);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: background 0.3s;
+    font-size: 14px;
+    // line-height: 1.1;
+
+    &:hover {
+      background: linear-gradient(135deg, #d3d3d3 0%, #f0f0f0 100%);
+    }
+
+    &.active {
+      background: linear-gradient(135deg, #d3d3d3 0%, #ffffff 100%);
+      font-weight: bold;
+      border: 1px solid #9b9b9b;
+
+      &:hover {
+        background: linear-gradient(135deg, #ec5e5e 0%, #ffffff 100%);
+        font-weight: bold;
+        border: 1px solid black;
+      }
+    }
+
+    &:active {
+      background: gray;
+    }
+  }
+
+  .dots {
+    padding: 5px 2px;
+  }
+
+  .items-per-page-select {
+    // padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: linear-gradient(135deg, #e6e6e6 0%, #ffffff 100%);
+    cursor: pointer;
+    margin-left: 4px;
+    padding: 4px 5px;
+    font-size: 14px;
+    outline: none;
+
+    &:hover {
+      background: #D3D3D3FF;
+      // font-weight: bold;
+      // border: 1px solid black;
+    }
+  }
+}

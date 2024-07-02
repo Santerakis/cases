@@ -1,0 +1,95 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.graph-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightcyan;
+}
+
+.y-axis-label {
+  position: absolute;
+  left: -15px; /* adjust as needed */
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.x-axis-label {
+  margin-top: 5px; /* adjust as needed */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/*.graph-container::before,*/
+/*.graph-container::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  border-style: solid;*/
+/*}*/
+
+/*.graph-container::before {*/
+/*  !* Arrow for Y-axis *!*/
+/*  top: 5%;*/
+/*  left: 20px; !* adjust as needed *!*/
+/*  border-width: 10px 5px 0 5px;*/
+/*  border-color: #333 transparent transparent transparent;*/
+/*  transform: rotate(180deg);*/
+/*}*/
+
+/*.graph-container::after {*/
+/*  !* Arrow for X-axis *!*/
+/*  bottom: 16px; !* adjust as needed *!*/
+/*  left: 95%;*/
+/*  border-width: 5px 10px 5px 0;*/
+/*  border-color: transparent #333 transparent transparent;*/
+/*  transform: rotate(0deg);*/
+/*}*/
